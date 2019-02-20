@@ -14,11 +14,16 @@ class QuestionGenerator {
         
         var questions = [Question]()
         
-        questions.append(Question.init(text: "1 Қоғамда алғашқы ірі еңбек бөлінісін туғызған жағдай", variantA: "терімшіліктің дамуы", variantB: "аңшылықтың тууы", variantC: "тобырдың қалыптасуы", variantD: "темірді пайдалану", answer: 1))
+        questions.append(Question.init(text: "Приставка Кило обозначает:", variantA: "10^3", variantB: "10^5", variantC: "100", variantD: "10^(-3)", answer: 1))
         
-        questions.append(Question.init(text: "2 Адамзат тарихы дамуының ең алғашқы кезеңі", variantA: "Қола дәуірі", variantB: "Темір дәуірі", variantC: "Рулық тайпалық кезең", variantD: "Андронов кезеңі", answer: 2))
+        questions.append(Question.init(text: "Сколько байт в 20 килобайтах?", variantA: "20000", variantB: "160", variantC: "20480", variantD: "2*10^4", answer: 3))
         
-        questions.append(Question.init(text: "3 Адамзат тарихы дамуының ең алғашқы кезеңі", variantA: "Қола дәуірі", variantB: "Темір дәуірі", variantC: "Рулық тайпалық кезең", variantD: "Андронов кезеңі", answer: 3))
+        questions.append(Question.init(text: "Выберите приставку, обозначающую самую малую величину среди перечисленных:", variantA: "Мили", variantB: "Санти", variantC: "Пета", variantD: "Пико", answer: 4))
+        
+        questions.append(Question.init(text: "10^(-9) соответствует приставке:", variantA: "Нано", variantB: "Микро", variantC: "Мили", variantD: "Санти", answer: 1))
+        
+        questions.append(Question.init(text: "101 в двоичной системе исчисления при переводе в десятичную будет равно:", variantA: "2", variantB: "5", variantC: "1", variantD: "3", answer: 2))
+        
         
         return questions
     }

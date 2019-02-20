@@ -12,7 +12,7 @@ class QuizManager {
     
     var questions = QuestionGenerator.getQuizQuestion()
     static var currentIndex = 0
-    var score = 0
+    static var score = 0
     
     func getCurrentQuestion() -> Question {
         return questions[QuizManager.currentIndex]
