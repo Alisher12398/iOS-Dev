@@ -24,6 +24,15 @@ class QuestionGenerator {
         
         questions.append(Question.init(text: "101 в двоичной системе исчисления при переводе в десятичную будет равно:", variantA: "2", variantB: "5", variantC: "1", variantD: "3", answer: 2))
         
+        questions.append(Question.init(text: "Выберите приставку, обозначающую самую наибольшую величину среди перечисленных:", variantA: "Мили", variantB: "Санти", variantC: "Пета", variantD: "Мега", answer: 3))
+        
+        questions.append(Question.init(text: "12 в восьмеричной системе исчисления при переводе в десятичную будет равно:", variantA: "2", variantB: "8", variantC: "10", variantD: "0", answer: 3))
+        
+        questions.append(Question.init(text: "Сколько байтов в 8 Байтах?", variantA: "8", variantB: "64", variantC: "2", variantD: "32", answer: 1))
+        
+        questions.append(Question.init(text: "Не относится к приставкам с положительным множителем:", variantA: "Пико", variantB: "Мега", variantC: "Гекто", variantD: "Дека", answer: 1))
+        
+        questions.append(Question.init(text: "С помощью одного байта можно закодировать:", variantA: "целое число от 0 до 1024", variantB: "целое число от 0 до 1000", variantC: "целое число от 0 до 10^3", variantD: "целое число от 0 до 255", answer: 4))
         
         return questions
     }

@@ -13,6 +13,8 @@ import Firebase
 
 class FirebaseAuthController2: UIViewController, FUIAuthDelegate {
     
+    @IBOutlet weak var authNameLabel: UILabel!
+    
     fileprivate(set) var auth:Auth?
     fileprivate(set) var authUI: FUIAuth? //only set internally but get externally
     fileprivate(set) var authStateListenerHandle: AuthStateDidChangeListenerHandle?
@@ -24,9 +26,13 @@ class FirebaseAuthController2: UIViewController, FUIAuthDelegate {
         
     }
     
+    @IBAction func quitButton(_ sender: UIButton) {
+        try! auth!.signOut()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         // Do any additional setup after loading the view, typically from a nib.
         self.auth = Auth.auth()
         self.authUI = FUIAuth.defaultAuthUI()
@@ -34,20 +40,23 @@ class FirebaseAuthController2: UIViewController, FUIAuthDelegate {
         self.authUI?.providers = [
          FUIEmailAuth()
         ]
-        
-        
+        authNameLabel.text = auth?.currentUser?.displayName
+       
         self.authStateListenerHandle = self.auth?.addStateDidChangeListener { (auth, user) in
             guard user != nil else {
                 self.loginAction(sender: self)
                 return
             }
         }
+         authNameLabel.text = auth?.currentUser?.displayName
     }
     
     func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
         guard let authError = error else { return }
         
         let errorCode = UInt((authError as NSError).code)
+        
+        authNameLabel.text = user!.displayName
         
         switch errorCode {
         case FUIAuthErrorCode.userCancelledSignIn.rawValue:
@@ -58,6 +67,7 @@ class FirebaseAuthController2: UIViewController, FUIAuthDelegate {
             let detailedError = (authError as NSError).userInfo[NSUnderlyingErrorKey] ?? authError
             print("Login error: \((detailedError as! NSError).localizedDescription)");
         }
+
     }
     
     
