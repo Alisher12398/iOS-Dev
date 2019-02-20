@@ -7,5 +7,8 @@ target 'question-app' do
 
   # Pods for question-app
 pod 'Firebase/Core'
+pod 'FirebaseUI/Auth'
+pod 'Firebase/Auth'
+pod 'FirebaseUI/Email'
 
 end
