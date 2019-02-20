@@ -11,11 +11,11 @@ import Foundation
 class QuizManager {
     
     var questions = QuestionGenerator.getQuizQuestion()
-    var currentIndex = 0
+    static var currentIndex = 0
     var score = 0
     
     func getCurrentQuestion() -> Question {
-        return questions[currentIndex]
+        return questions[QuizManager.currentIndex]
     }
     
 }

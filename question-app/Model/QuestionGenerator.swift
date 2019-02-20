@@ -18,7 +18,6 @@ class QuestionGenerator {
         
         questions.append(Question.init(text: "2 Адамзат тарихы дамуының ең алғашқы кезеңі", variantA: "Қола дәуірі", variantB: "Темір дәуірі", variantC: "Рулық тайпалық кезең", variantD: "Андронов кезеңі", answer: 2))
         
-        
         questions.append(Question.init(text: "3 Адамзат тарихы дамуының ең алғашқы кезеңі", variantA: "Қола дәуірі", variantB: "Темір дәуірі", variantC: "Рулық тайпалық кезең", variantD: "Андронов кезеңі", answer: 3))
         
         return questions

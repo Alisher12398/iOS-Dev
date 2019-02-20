@@ -87,6 +87,16 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZB-NE-3Vi">
+                                <rect key="frame" x="98" y="373" width="179" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextQuestionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X7X-xd-5nK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -96,6 +106,7 @@
                         <outlet property="answer2Button" destination="OYs-Tb-JOh" id="3kj-QP-PcE"/>
                         <outlet property="answer3Button" destination="4Po-lN-mcB" id="gJD-KH-PCp"/>
                         <outlet property="answer4Button" destination="Rhu-CV-ppe" id="mZK-hA-6gm"/>
+                        <outlet property="nextQuestionButton" destination="bZB-NE-3Vi" id="oNG-q3-guq"/>
                         <outlet property="questionText" destination="A8P-7p-QIG" id="Yxy-Gv-KRc"/>
                     </connections>
                 </viewController>
