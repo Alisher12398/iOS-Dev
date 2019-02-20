@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0663884B221C0C9000EA322C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0663884A221C0C9000EA322C /* AppDelegate.swift */; };
-		0663884D221C0C9000EA322C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0663884C221C0C9000EA322C /* ViewController.swift */; };
 		06638850221C0C9000EA322C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0663884E221C0C9000EA322C /* Main.storyboard */; };
 		06638853221C0C9000EA322C /* question_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06638851221C0C9000EA322C /* question_app.xcdatamodeld */; };
 		06638855221C0C9100EA322C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06638854221C0C9100EA322C /* Assets.xcassets */; };
 		06638858221C0C9100EA322C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06638856221C0C9100EA322C /* LaunchScreen.storyboard */; };
 		06638860221C0D6900EA322C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0663885F221C0D6900EA322C /* GoogleService-Info.plist */; };
+		069583F8221C4572002989FE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069583F7221C4572002989FE /* MainViewController.swift */; };
+		069583FB221C5BCD002989FE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069583FA221C5BCD002989FE /* Question.swift */; };
+		069583FD221C5C6D002989FE /* QuestionGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069583FC221C5C6D002989FE /* QuestionGenerator.swift */; };
+		069583FF221C5C93002989FE /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069583FE221C5C93002989FE /* QuizManager.swift */; };
 		40EFA538FFDFF1BDEC1D185B /* Pods_question_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F868370F7811C58C0F2E72A6 /* Pods_question_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,13 +24,16 @@
 		039FD62D97B286DF6A84D0DA /* Pods-question-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-question-app.debug.xcconfig"; path = "Target Support Files/Pods-question-app/Pods-question-app.debug.xcconfig"; sourceTree = "<group>"; };
 		06638847221C0C9000EA322C /* question-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "question-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0663884A221C0C9000EA322C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0663884C221C0C9000EA322C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0663884F221C0C9000EA322C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06638852221C0C9000EA322C /* question_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = question_app.xcdatamodel; sourceTree = "<group>"; };
 		06638854221C0C9100EA322C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06638857221C0C9100EA322C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06638859221C0C9100EA322C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0663885F221C0D6900EA322C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		069583F7221C4572002989FE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		069583FA221C5BCD002989FE /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		069583FC221C5C6D002989FE /* QuestionGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGenerator.swift; sourceTree = "<group>"; };
+		069583FE221C5C93002989FE /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
 		683E4BF8E6E3C9CE7AA07492 /* Pods-question-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-question-app.release.xcconfig"; path = "Target Support Files/Pods-question-app/Pods-question-app.release.xcconfig"; sourceTree = "<group>"; };
 		F868370F7811C58C0F2E72A6 /* Pods_question_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_question_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -65,9 +71,10 @@
 		06638849221C0C9000EA322C /* question-app */ = {
 			isa = PBXGroup;
 			children = (
+				069583F9221C53F9002989FE /* Model */,
+				069583F6221C4538002989FE /* Controller */,
 				0663885F221C0D6900EA322C /* GoogleService-Info.plist */,
 				0663884A221C0C9000EA322C /* AppDelegate.swift */,
-				0663884C221C0C9000EA322C /* ViewController.swift */,
 				0663884E221C0C9000EA322C /* Main.storyboard */,
 				06638854221C0C9100EA322C /* Assets.xcassets */,
 				06638856221C0C9100EA322C /* LaunchScreen.storyboard */,
@@ -75,6 +82,24 @@
 				06638851221C0C9000EA322C /* question_app.xcdatamodeld */,
 			);
 			path = "question-app";
+			sourceTree = "<group>";
+		};
+		069583F6221C4538002989FE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				069583F7221C4572002989FE /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		069583F9221C53F9002989FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				069583FA221C5BCD002989FE /* Question.swift */,
+				069583FC221C5C6D002989FE /* QuestionGenerator.swift */,
+				069583FE221C5C93002989FE /* QuizManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		3ABB51654432180BEAD3DFF4 /* Frameworks */ = {
@@ -91,7 +116,6 @@
 				039FD62D97B286DF6A84D0DA /* Pods-question-app.debug.xcconfig */,
 				683E4BF8E6E3C9CE7AA07492 /* Pods-question-app.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -123,6 +147,9 @@
 		0663883F221C0C9000EA322C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					2,
+				);
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Алишер Халыкбаев";
@@ -219,8 +246,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				06638853221C0C9000EA322C /* question_app.xcdatamodeld in Sources */,
-				0663884D221C0C9000EA322C /* ViewController.swift in Sources */,
+				069583FD221C5C6D002989FE /* QuestionGenerator.swift in Sources */,
+				069583FB221C5BCD002989FE /* Question.swift in Sources */,
 				0663884B221C0C9000EA322C /* AppDelegate.swift in Sources */,
+				069583FF221C5C93002989FE /* QuizManager.swift in Sources */,
+				069583F8221C4572002989FE /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
