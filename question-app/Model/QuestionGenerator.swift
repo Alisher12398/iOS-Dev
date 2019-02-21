@@ -14,6 +14,8 @@ class QuestionGenerator {
         
         var questions = [Question]()
         
+        //add questions to array
+
         questions.append(Question.init(text: "Приставка Кило обозначает:", variantA: "10^3", variantB: "10^5", variantC: "100", variantD: "10^(-3)", answer: 1))
         
         questions.append(Question.init(text: "Сколько байт в 20 килобайтах?", variantA: "20000", variantB: "160", variantC: "20480", variantD: "2*10^4", answer: 3))

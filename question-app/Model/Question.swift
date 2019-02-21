@@ -8,6 +8,7 @@
 
 import Foundation
 
+//question model
 class Question {
     
     var text: String

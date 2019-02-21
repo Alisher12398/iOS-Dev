@@ -19,6 +19,7 @@ class FirebaseAuthController2: UIViewController, FUIAuthDelegate {
     fileprivate(set) var authUI: FUIAuth? //only set internally but get externally
     fileprivate(set) var authStateListenerHandle: AuthStateDidChangeListenerHandle?
 
+    //call login UI
     @IBAction func loginAction(sender: AnyObject) {
         // Present the default login view controller provided by authUI
         let authViewController = authUI?.authViewController();
@@ -26,6 +27,7 @@ class FirebaseAuthController2: UIViewController, FUIAuthDelegate {
         
     }
     
+    //log out
     @IBAction func quitButton(_ sender: UIButton) {
         try! auth!.signOut()
     }
@@ -33,7 +35,7 @@ class FirebaseAuthController2: UIViewController, FUIAuthDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        // Do any additional setup after loading the view, typically from a nib.
+        //implement objects of standert classes
         self.auth = Auth.auth()
         self.authUI = FUIAuth.defaultAuthUI()
         self.authUI?.delegate = self
@@ -42,6 +44,7 @@ class FirebaseAuthController2: UIViewController, FUIAuthDelegate {
         ]
         authNameLabel.text = auth?.currentUser?.displayName
        
+        //user auth listener
         self.authStateListenerHandle = self.auth?.addStateDidChangeListener { (auth, user) in
             guard user != nil else {
                 self.loginAction(sender: self)
@@ -51,6 +54,7 @@ class FirebaseAuthController2: UIViewController, FUIAuthDelegate {
          authNameLabel.text = auth?.currentUser?.displayName
     }
     
+    //error exeption
     func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
         guard let authError = error else { return }
         

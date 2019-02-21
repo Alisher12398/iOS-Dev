@@ -28,8 +28,10 @@ class QuestionViewController: UIViewController {
     
     @IBAction func answerButtonTapped(_ sender : UIButton){
         
+        //change a color of answer buttons
         changeColor(answer: manager.getCurrentQuestion().answer)
         
+        //return default alpha to answer button tapped by user
         switch sender.tag {
         case 1:
             answer1Button.alpha = 1.0
@@ -48,6 +50,7 @@ class QuestionViewController: UIViewController {
             print()
         }
         
+        //add a score if user answer is corrent
         if manager.getCurrentQuestion().answer == sender.tag {
             currentScore += 1
             currentScoreLabel.text = String(currentScore)
@@ -57,6 +60,7 @@ class QuestionViewController: UIViewController {
     
     @IBAction func nextQuestionButtonTapped(_ sender : UIButton){
         
+        //stop quiz if current question is last or return answer buttons default color and alpha
         if QuizManager.currentIndex == 9 {
             QuizManager.currentIndex = 0
             QuizManager.score = currentScore
@@ -79,6 +83,7 @@ class QuestionViewController: UIViewController {
         
     }
     
+    //change anser buttons color and alpha after tap
     func changeColor(answer : Int){
         answer1Button.backgroundColor = redColor
         answer2Button.backgroundColor = redColor
@@ -109,6 +114,7 @@ class QuestionViewController: UIViewController {
         showQuestion()
     }
     
+    //fill text label and answer buttons
     func showQuestion() {
         
         let question = manager.getCurrentQuestion()

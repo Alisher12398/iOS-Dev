@@ -14,6 +14,7 @@ class QuizManager {
     static var currentIndex = 0
     static var score = 0
     
+    //return current question
     func getCurrentQuestion() -> Question {
         return questions[QuizManager.currentIndex]
     }
