@@ -56,8 +56,6 @@ class FirebaseAuthController2: UIViewController, FUIAuthDelegate {
         
         let errorCode = UInt((authError as NSError).code)
         
-        authNameLabel.text = user!.displayName
-        
         switch errorCode {
         case FUIAuthErrorCode.userCancelledSignIn.rawValue:
             print("User cancelled sign-in");
@@ -67,6 +65,8 @@ class FirebaseAuthController2: UIViewController, FUIAuthDelegate {
             let detailedError = (authError as NSError).userInfo[NSUnderlyingErrorKey] ?? authError
             print("Login error: \((detailedError as! NSError).localizedDescription)");
         }
+        
+        authNameLabel.text = user?.displayName
 
     }
     
