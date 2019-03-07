@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06397EA022264937002857D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06397E9F22264937002857D3 /* AppDelegate.swift */; };
-		06397EA522264937002857D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06397EA322264937002857D3 /* Main.storyboard */; };
-		06397EA822264937002857D3 /* Contacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06397EA622264937002857D3 /* Contacts.xcdatamodeld */; };
-		06397EAA2226493C002857D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06397EA92226493C002857D3 /* Assets.xcassets */; };
-		06397EAD2226493C002857D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06397EAB2226493C002857D3 /* LaunchScreen.storyboard */; };
-		06397EB82227DF72002857D3 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06397EB72227DF72002857D3 /* Contact.swift */; };
-		065885002227E2DB0034B838 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065884FF2227E2DB0034B838 /* ContactListViewController.swift */; };
-		065885022227E59E0034B838 /* ContactViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065885012227E59E0034B838 /* ContactViewCell.swift */; };
+		ED3417C4221EE023002B5B64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3417C3221EE023002B5B64 /* AppDelegate.swift */; };
+		ED3417C9221EE023002B5B64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED3417C7221EE023002B5B64 /* Main.storyboard */; };
+		ED3417CB221EE026002B5B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED3417CA221EE026002B5B64 /* Assets.xcassets */; };
+		ED3417CE221EE026002B5B64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED3417CC221EE026002B5B64 /* LaunchScreen.storyboard */; };
+		ED3417D7221EE0B3002B5B64 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3417D6221EE0B3002B5B64 /* Contact.swift */; };
+		ED3417DA221EE1A6002B5B64 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3417D9221EE1A6002B5B64 /* ContactListViewController.swift */; };
+		ED3417DC221EE1C5002B5B64 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3417DB221EE1C5002B5B64 /* AddContactViewController.swift */; };
+		ED3417DF221EF473002B5B64 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3417DE221EF473002B5B64 /* ContactTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		06397E9C22264937002857D3 /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		06397E9F22264937002857D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		06397EA422264937002857D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		06397EA722264937002857D3 /* Contacts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Contacts.xcdatamodel; sourceTree = "<group>"; };
-		06397EA92226493C002857D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		06397EAC2226493C002857D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		06397EAE2226493C002857D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		06397EB72227DF72002857D3 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
-		065884FF2227E2DB0034B838 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactListViewController.swift; path = Contacts/Controller/ContactListViewController.swift; sourceTree = SOURCE_ROOT; };
-		065885012227E59E0034B838 /* ContactViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewCell.swift; sourceTree = "<group>"; };
+		ED3417C0221EE023002B5B64 /* GetContact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetContact.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3417C3221EE023002B5B64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED3417C8221EE023002B5B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED3417CA221EE026002B5B64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED3417CD221EE026002B5B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED3417CF221EE026002B5B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED3417D6221EE0B3002B5B64 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		ED3417D9221EE1A6002B5B64 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		ED3417DB221EE1C5002B5B64 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		ED3417DE221EF473002B5B64 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		06397E9922264937002857D3 /* Frameworks */ = {
+		ED3417BD221EE023002B5B64 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,58 +41,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06397E9322264937002857D3 = {
+		ED3417B7221EE023002B5B64 = {
 			isa = PBXGroup;
 			children = (
-				06397E9E22264937002857D3 /* Contacts */,
-				06397E9D22264937002857D3 /* Products */,
+				ED3417C2221EE023002B5B64 /* GetContact */,
+				ED3417C1221EE023002B5B64 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		06397E9D22264937002857D3 /* Products */ = {
+		ED3417C1221EE023002B5B64 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				06397E9C22264937002857D3 /* Contacts.app */,
+				ED3417C0221EE023002B5B64 /* GetContact.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		06397E9E22264937002857D3 /* Contacts */ = {
+		ED3417C2221EE023002B5B64 /* GetContact */ = {
 			isa = PBXGroup;
 			children = (
-				06397EB62227DF56002857D3 /* View */,
-				06397EB52227DF4B002857D3 /* Controller */,
-				06397EB42227DF41002857D3 /* Model */,
-				06397E9F22264937002857D3 /* AppDelegate.swift */,
-				06397EA322264937002857D3 /* Main.storyboard */,
-				06397EA92226493C002857D3 /* Assets.xcassets */,
-				06397EAB2226493C002857D3 /* LaunchScreen.storyboard */,
-				06397EAE2226493C002857D3 /* Info.plist */,
-				06397EA622264937002857D3 /* Contacts.xcdatamodeld */,
+				ED3417DD221EF460002B5B64 /* View */,
+				ED3417D8221EE160002B5B64 /* Controller */,
+				ED3417D5221EE0A7002B5B64 /* Model */,
+				ED3417C3221EE023002B5B64 /* AppDelegate.swift */,
+				ED3417C7221EE023002B5B64 /* Main.storyboard */,
+				ED3417CA221EE026002B5B64 /* Assets.xcassets */,
+				ED3417CC221EE026002B5B64 /* LaunchScreen.storyboard */,
+				ED3417CF221EE026002B5B64 /* Info.plist */,
 			);
-			path = Contacts;
+			path = GetContact;
 			sourceTree = "<group>";
 		};
-		06397EB42227DF41002857D3 /* Model */ = {
+		ED3417D5221EE0A7002B5B64 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				06397EB72227DF72002857D3 /* Contact.swift */,
+				ED3417D6221EE0B3002B5B64 /* Contact.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		06397EB52227DF4B002857D3 /* Controller */ = {
+		ED3417D8221EE160002B5B64 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				065884FF2227E2DB0034B838 /* ContactListViewController.swift */,
+				ED3417D9221EE1A6002B5B64 /* ContactListViewController.swift */,
+				ED3417DB221EE1C5002B5B64 /* AddContactViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		06397EB62227DF56002857D3 /* View */ = {
+		ED3417DD221EF460002B5B64 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				065885012227E59E0034B838 /* ContactViewCell.swift */,
+				ED3417DE221EF473002B5B64 /* ContactTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -100,39 +100,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		06397E9B22264937002857D3 /* Contacts */ = {
+		ED3417BF221EE023002B5B64 /* GetContact */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 06397EB12226493C002857D3 /* Build configuration list for PBXNativeTarget "Contacts" */;
+			buildConfigurationList = ED3417D2221EE026002B5B64 /* Build configuration list for PBXNativeTarget "GetContact" */;
 			buildPhases = (
-				06397E9822264937002857D3 /* Sources */,
-				06397E9922264937002857D3 /* Frameworks */,
-				06397E9A22264937002857D3 /* Resources */,
+				ED3417BC221EE023002B5B64 /* Sources */,
+				ED3417BD221EE023002B5B64 /* Frameworks */,
+				ED3417BE221EE023002B5B64 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Contacts;
-			productName = Contacts;
-			productReference = 06397E9C22264937002857D3 /* Contacts.app */;
+			name = GetContact;
+			productName = GetContact;
+			productReference = ED3417C0221EE023002B5B64 /* GetContact.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		06397E9422264937002857D3 /* Project object */ = {
+		ED3417B8221EE023002B5B64 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Алишер Халыкбаев";
+				ORGANIZATIONNAME = KBTU;
 				TargetAttributes = {
-					06397E9B22264937002857D3 = {
+					ED3417BF221EE023002B5B64 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 06397E9722264937002857D3 /* Build configuration list for PBXProject "Contacts" */;
+			buildConfigurationList = ED3417BB221EE023002B5B64 /* Build configuration list for PBXProject "GetContact" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -140,57 +140,57 @@
 				en,
 				Base,
 			);
-			mainGroup = 06397E9322264937002857D3;
-			productRefGroup = 06397E9D22264937002857D3 /* Products */;
+			mainGroup = ED3417B7221EE023002B5B64;
+			productRefGroup = ED3417C1221EE023002B5B64 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				06397E9B22264937002857D3 /* Contacts */,
+				ED3417BF221EE023002B5B64 /* GetContact */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		06397E9A22264937002857D3 /* Resources */ = {
+		ED3417BE221EE023002B5B64 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06397EAD2226493C002857D3 /* LaunchScreen.storyboard in Resources */,
-				06397EAA2226493C002857D3 /* Assets.xcassets in Resources */,
-				06397EA522264937002857D3 /* Main.storyboard in Resources */,
+				ED3417CE221EE026002B5B64 /* LaunchScreen.storyboard in Resources */,
+				ED3417CB221EE026002B5B64 /* Assets.xcassets in Resources */,
+				ED3417C9221EE023002B5B64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		06397E9822264937002857D3 /* Sources */ = {
+		ED3417BC221EE023002B5B64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				065885002227E2DB0034B838 /* ContactListViewController.swift in Sources */,
-				06397EA022264937002857D3 /* AppDelegate.swift in Sources */,
-				06397EB82227DF72002857D3 /* Contact.swift in Sources */,
-				06397EA822264937002857D3 /* Contacts.xcdatamodeld in Sources */,
-				065885022227E59E0034B838 /* ContactViewCell.swift in Sources */,
+				ED3417DC221EE1C5002B5B64 /* AddContactViewController.swift in Sources */,
+				ED3417DF221EF473002B5B64 /* ContactTableViewCell.swift in Sources */,
+				ED3417D7221EE0B3002B5B64 /* Contact.swift in Sources */,
+				ED3417DA221EE1A6002B5B64 /* ContactListViewController.swift in Sources */,
+				ED3417C4221EE023002B5B64 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		06397EA322264937002857D3 /* Main.storyboard */ = {
+		ED3417C7221EE023002B5B64 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				06397EA422264937002857D3 /* Base */,
+				ED3417C8221EE023002B5B64 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		06397EAB2226493C002857D3 /* LaunchScreen.storyboard */ = {
+		ED3417CC221EE026002B5B64 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				06397EAC2226493C002857D3 /* Base */,
+				ED3417CD221EE026002B5B64 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -198,7 +198,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		06397EAF2226493C002857D3 /* Debug */ = {
+		ED3417D0221EE026002B5B64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -259,7 +259,7 @@
 			};
 			name = Debug;
 		};
-		06397EB02226493C002857D3 /* Release */ = {
+		ED3417D1221EE026002B5B64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -314,34 +314,36 @@
 			};
 			name = Release;
 		};
-		06397EB22226493C002857D3 /* Debug */ = {
+		ED3417D3221EE026002B5B64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Contacts/Info.plist;
+				DEVELOPMENT_TEAM = VW56VJK748;
+				INFOPLIST_FILE = GetContact/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.omegalabs.Contacts;
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.GetContact;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		06397EB32226493C002857D3 /* Release */ = {
+		ED3417D4221EE026002B5B64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Contacts/Info.plist;
+				DEVELOPMENT_TEAM = VW56VJK748;
+				INFOPLIST_FILE = GetContact/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.omegalabs.Contacts;
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.GetContact;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -351,38 +353,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		06397E9722264937002857D3 /* Build configuration list for PBXProject "Contacts" */ = {
+		ED3417BB221EE023002B5B64 /* Build configuration list for PBXProject "GetContact" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				06397EAF2226493C002857D3 /* Debug */,
-				06397EB02226493C002857D3 /* Release */,
+				ED3417D0221EE026002B5B64 /* Debug */,
+				ED3417D1221EE026002B5B64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		06397EB12226493C002857D3 /* Build configuration list for PBXNativeTarget "Contacts" */ = {
+		ED3417D2221EE026002B5B64 /* Build configuration list for PBXNativeTarget "GetContact" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				06397EB22226493C002857D3 /* Debug */,
-				06397EB32226493C002857D3 /* Release */,
+				ED3417D3221EE026002B5B64 /* Debug */,
+				ED3417D4221EE026002B5B64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		06397EA622264937002857D3 /* Contacts.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				06397EA722264937002857D3 /* Contacts.xcdatamodel */,
-			);
-			currentVersion = 06397EA722264937002857D3 /* Contacts.xcdatamodel */;
-			path = Contacts.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = 06397E9422264937002857D3 /* Project object */;
+	rootObject = ED3417B8221EE023002B5B64 /* Project object */;
 }
