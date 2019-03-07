@@ -14,12 +14,7 @@ class ContactListViewController: UIViewController, UITableViewDataSource, UITabl
     @IBOutlet weak var tableView: UITableView!
     
     var contacts = [Contact]()
-    
-    let defaults = UserDefaults.standard
-    defaults.set(contacts, forKey: "SavedStringArray")
-    
-    
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 

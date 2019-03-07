@@ -8,22 +8,14 @@
 
 import Foundation
 
-enum TagColor {
-    case red
-    case green
-    case blue
-    case yellow
-    case orange
-}
-
 class Contact {
     
     var firstname: String
     var lastname: String
     var phone: String
-    var tag: TagColor
+    var tag: String
     
-    init(firstname: String, lastname: String, phone: String, tag: TagColor) {
+    init(firstname: String, lastname: String, phone: String, tag: String) {
         
         self.firstname = firstname
         self.lastname = lastname

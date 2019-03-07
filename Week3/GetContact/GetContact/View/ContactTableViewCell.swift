@@ -27,6 +27,23 @@ class ContactTableViewCell: UITableViewCell {
     func setContact(_ contact: Contact) {
         nameLabel.text = "\(contact.firstname) \(contact.lastname)"
         
+        switch contact.tag {
+        case "Red":
+           nameLabel.textColor = UIColor.red
+           phoneLabel.textColor = UIColor.red
+        case "Yellow":
+            nameLabel.textColor = UIColor.yellow
+            phoneLabel.textColor = UIColor.yellow
+        case "Green":
+            nameLabel.textColor = UIColor.green
+            phoneLabel.textColor = UIColor.green
+        case "Blue":
+            nameLabel.textColor = UIColor.blue
+            phoneLabel.textColor = UIColor.blue
+        default:
+            print()
+        }
+        
         phoneLabel.text = contact.phone
     }
     

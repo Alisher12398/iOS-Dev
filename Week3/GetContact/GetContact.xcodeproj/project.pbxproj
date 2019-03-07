@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0621CB542231727F00CCB1F4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0621CB532231727F00CCB1F4 /* libsqlite3.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
+		0621CB56223172CC00CCB1F4 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621CB55223172CC00CCB1F4 /* DBHelper.swift */; };
+		C4AAA270E81217CA51809D66 /* Pods_GetContact.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DECD81827CB29F94B16D1E10 /* Pods_GetContact.framework */; };
 		ED3417C4221EE023002B5B64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3417C3221EE023002B5B64 /* AppDelegate.swift */; };
 		ED3417C9221EE023002B5B64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED3417C7221EE023002B5B64 /* Main.storyboard */; };
 		ED3417CB221EE026002B5B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED3417CA221EE026002B5B64 /* Assets.xcassets */; };
@@ -18,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0621CB532231727F00CCB1F4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0621CB55223172CC00CCB1F4 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		9CDBB2D6BFB648D90385FF48 /* Pods-GetContact.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetContact.release.xcconfig"; path = "Target Support Files/Pods-GetContact/Pods-GetContact.release.xcconfig"; sourceTree = "<group>"; };
+		ACB12B9F217C0737226169AA /* Pods-GetContact.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetContact.debug.xcconfig"; path = "Target Support Files/Pods-GetContact/Pods-GetContact.debug.xcconfig"; sourceTree = "<group>"; };
+		DECD81827CB29F94B16D1E10 /* Pods_GetContact.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetContact.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3417C0221EE023002B5B64 /* GetContact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetContact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3417C3221EE023002B5B64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED3417C8221EE023002B5B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,17 +43,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0621CB542231727F00CCB1F4 /* libsqlite3.tbd in Frameworks */,
+				C4AAA270E81217CA51809D66 /* Pods_GetContact.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0621CB522231727F00CCB1F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0621CB532231727F00CCB1F4 /* libsqlite3.tbd */,
+				DECD81827CB29F94B16D1E10 /* Pods_GetContact.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0650A9832231775A001FEE12 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		07E2FFF808FBC3572D625150 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACB12B9F217C0737226169AA /* Pods-GetContact.debug.xcconfig */,
+				9CDBB2D6BFB648D90385FF48 /* Pods-GetContact.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		ED3417B7221EE023002B5B64 = {
 			isa = PBXGroup;
 			children = (
 				ED3417C2221EE023002B5B64 /* GetContact */,
 				ED3417C1221EE023002B5B64 /* Products */,
+				0621CB522231727F00CCB1F4 /* Frameworks */,
+				07E2FFF808FBC3572D625150 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +97,7 @@
 		ED3417C2221EE023002B5B64 /* GetContact */ = {
 			isa = PBXGroup;
 			children = (
+				0650A9832231775A001FEE12 /* Database */,
 				ED3417DD221EF460002B5B64 /* View */,
 				ED3417D8221EE160002B5B64 /* Controller */,
 				ED3417D5221EE0A7002B5B64 /* Model */,
@@ -76,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				ED3417D6221EE0B3002B5B64 /* Contact.swift */,
+				0621CB55223172CC00CCB1F4 /* DBHelper.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -104,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED3417D2221EE026002B5B64 /* Build configuration list for PBXNativeTarget "GetContact" */;
 			buildPhases = (
+				DC850AEDA572975CDFBFE397 /* [CP] Check Pods Manifest.lock */,
 				ED3417BC221EE023002B5B64 /* Sources */,
 				ED3417BD221EE023002B5B64 /* Frameworks */,
 				ED3417BE221EE023002B5B64 /* Resources */,
+				9754B3A5B2555D1DD06127F3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,12 +204,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9754B3A5B2555D1DD06127F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GetContact/Pods-GetContact-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GetContact/Pods-GetContact-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC850AEDA572975CDFBFE397 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GetContact-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED3417BC221EE023002B5B64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				ED3417DC221EE1C5002B5B64 /* AddContactViewController.swift in Sources */,
+				0621CB56223172CC00CCB1F4 /* DBHelper.swift in Sources */,
 				ED3417DF221EF473002B5B64 /* ContactTableViewCell.swift in Sources */,
 				ED3417D7221EE0B3002B5B64 /* Contact.swift in Sources */,
 				ED3417DA221EE1A6002B5B64 /* ContactListViewController.swift in Sources */,
@@ -316,6 +405,7 @@
 		};
 		ED3417D3221EE026002B5B64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACB12B9F217C0737226169AA /* Pods-GetContact.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -334,6 +424,7 @@
 		};
 		ED3417D4221EE026002B5B64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CDBB2D6BFB648D90385FF48 /* Pods-GetContact.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

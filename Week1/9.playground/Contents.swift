@@ -15,7 +15,7 @@ class Solution {
         
         var startIndex = 0
         var endIndex = charString.count - 1
-        
+        print (String(charString))
         while (startIndex < endIndex) {
             if charString[startIndex] != charString[endIndex]{
                 return false

@@ -112,19 +112,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tag: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SfS-mg-yBb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SfS-mg-yBb">
                                 <rect key="frame" x="169" y="245" width="37" height="31"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="75g-Uh-SlO">
-                                <rect key="frame" x="0.0" y="292" width="375" height="162"/>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="75g-Uh-SlO">
+                                <rect key="frame" x="16" y="292" width="343" height="162"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="IKC-Gr-eS9" firstAttribute="top" secondItem="GNH-p9-R2z" secondAttribute="bottom" constant="8" id="0Jm-yC-uDd"/>
+                            <constraint firstItem="6Fs-sT-s4x" firstAttribute="trailing" secondItem="75g-Uh-SlO" secondAttribute="trailing" constant="16" id="6Qh-Bl-EhM"/>
                             <constraint firstItem="6Fs-sT-s4x" firstAttribute="trailing" secondItem="A4u-0K-b3E" secondAttribute="trailing" constant="16" id="7zL-lF-n4n"/>
                             <constraint firstItem="A4u-0K-b3E" firstAttribute="top" secondItem="6Fs-sT-s4x" secondAttribute="top" constant="16" id="DLk-1V-LOO"/>
                             <constraint firstItem="6Fs-sT-s4x" firstAttribute="trailing" secondItem="GNH-p9-R2z" secondAttribute="trailing" constant="16" id="PHP-7q-bkD"/>
@@ -137,6 +138,7 @@
                             <constraint firstItem="SfS-mg-yBb" firstAttribute="top" secondItem="IKC-Gr-eS9" secondAttribute="bottom" constant="17" id="mLi-nJ-P5q"/>
                             <constraint firstItem="A4u-0K-b3E" firstAttribute="leading" secondItem="6Fs-sT-s4x" secondAttribute="leading" constant="16" id="t37-uL-IoB"/>
                             <constraint firstItem="6Fs-sT-s4x" firstAttribute="trailing" secondItem="IKC-Gr-eS9" secondAttribute="trailing" constant="16" id="vYX-EE-fZQ"/>
+                            <constraint firstItem="75g-Uh-SlO" firstAttribute="leading" secondItem="6Fs-sT-s4x" secondAttribute="leading" constant="16" id="y8f-XL-GT9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Fs-sT-s4x"/>
                     </view>
@@ -145,6 +147,7 @@
                         <outlet property="firstnameField" destination="A4u-0K-b3E" id="6mF-Al-LEA"/>
                         <outlet property="lastnameField" destination="GNH-p9-R2z" id="aH1-Li-cgo"/>
                         <outlet property="phoneField" destination="IKC-Gr-eS9" id="WQN-bv-kNb"/>
+                        <outlet property="tagSelectPickerView" destination="75g-Uh-SlO" id="8p9-Sw-ZgO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sgt-1M-oJW" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -13,7 +13,27 @@ protocol AddContactDelegate {
 }
 
 
-class AddContactViewController: UIViewController {
+class AddContactViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    let colors = ["No","Red","Yellow","Green","Blue"]
+    var selectedTag = "Noo"
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return colors.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return colors[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+       selectedTag = colors[row]
+    }
+    
 
     @IBOutlet weak var firstnameField: UITextField!
     @IBOutlet weak var lastnameField: UITextField!
@@ -21,8 +41,13 @@ class AddContactViewController: UIViewController {
     
     var delegate: AddContactDelegate?
     
+    @IBOutlet weak var tagSelectPickerView: UIPickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tagSelectPickerView.delegate = self
+        tagSelectPickerView.dataSource = self
 
         let addButton = UIBarButtonItem.init(title: "Add", style: .done, target: self, action: #selector(addTapped))
         
@@ -53,8 +78,7 @@ class AddContactViewController: UIViewController {
             return
         }
         
-        
-        let contact = Contact.init(firstname: firstnameField.text ?? "", lastname: lastnameField.text ?? "", phone: phoneField.text ?? "", tag: .red)
+        let contact = Contact.init(firstname: firstnameField.text ?? "", lastname: lastnameField.text ?? "", phone: phoneField.text ?? "", tag: selectedTag)
         
         delegate?.didCreateContact(contact: contact)
 
