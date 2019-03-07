@@ -112,6 +112,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tag: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SfS-mg-yBb">
+                                <rect key="frame" x="169" y="245" width="37" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="75g-Uh-SlO">
+                                <rect key="frame" x="0.0" y="292" width="375" height="162"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -120,8 +129,12 @@
                             <constraint firstItem="A4u-0K-b3E" firstAttribute="top" secondItem="6Fs-sT-s4x" secondAttribute="top" constant="16" id="DLk-1V-LOO"/>
                             <constraint firstItem="6Fs-sT-s4x" firstAttribute="trailing" secondItem="GNH-p9-R2z" secondAttribute="trailing" constant="16" id="PHP-7q-bkD"/>
                             <constraint firstItem="IKC-Gr-eS9" firstAttribute="leading" secondItem="6Fs-sT-s4x" secondAttribute="leading" constant="16" id="Snp-cD-wWI"/>
+                            <constraint firstItem="6Fs-sT-s4x" firstAttribute="trailing" secondItem="SfS-mg-yBb" secondAttribute="trailing" constant="169" id="TOf-ov-OgF"/>
+                            <constraint firstItem="75g-Uh-SlO" firstAttribute="top" secondItem="SfS-mg-yBb" secondAttribute="bottom" constant="16" id="UfI-cq-2bW"/>
+                            <constraint firstItem="SfS-mg-yBb" firstAttribute="leading" secondItem="6Fs-sT-s4x" secondAttribute="leading" constant="169" id="VSh-EW-td5"/>
                             <constraint firstItem="GNH-p9-R2z" firstAttribute="leading" secondItem="6Fs-sT-s4x" secondAttribute="leading" constant="16" id="bBL-bz-caU"/>
                             <constraint firstItem="GNH-p9-R2z" firstAttribute="top" secondItem="A4u-0K-b3E" secondAttribute="bottom" constant="8" id="gnp-S3-fEQ"/>
+                            <constraint firstItem="SfS-mg-yBb" firstAttribute="top" secondItem="IKC-Gr-eS9" secondAttribute="bottom" constant="17" id="mLi-nJ-P5q"/>
                             <constraint firstItem="A4u-0K-b3E" firstAttribute="leading" secondItem="6Fs-sT-s4x" secondAttribute="leading" constant="16" id="t37-uL-IoB"/>
                             <constraint firstItem="6Fs-sT-s4x" firstAttribute="trailing" secondItem="IKC-Gr-eS9" secondAttribute="trailing" constant="16" id="vYX-EE-fZQ"/>
                         </constraints>

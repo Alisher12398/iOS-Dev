@@ -1,15 +1,30 @@
 class Solution {
     func isPalindrome(_ s: String) -> Bool {
-        var s1 = s
-        var charString = Array
-        var charReversedString = Array(s.reversed())
         
-        var currentStartIndex = 0
-        var currentEndIndex = charString.count
-        
-        for i in 0..<currentEndIndex{
-            //if charString[currentStartIndex]==
+        //var stringWithoutSpaces = s.split(separator: " ")
+        var charString = [Character](s.lowercased())
+        var currentIndex = 0
+        while (currentIndex < (charString.count-1) ){
+            if charString[currentIndex]==" " || charString[currentIndex]=="," || charString[currentIndex]=="!" || charString[currentIndex]==":" || charString[currentIndex]=="." || charString[currentIndex]=="?" || charString[currentIndex]=="-"  {
+                charString.remove(at: currentIndex)
+                currentIndex -= 1
+            }
+            currentIndex += 1
         }
         
+        
+        var startIndex = 0
+        var endIndex = charString.count - 1
+        
+        while (startIndex < endIndex) {
+            if charString[startIndex] != charString[endIndex]{
+                return false
+            }
+            startIndex += 1
+            endIndex -= 1
+        }
+        
+        return false
     }
 }
+
